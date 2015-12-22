@@ -1,0 +1,7 @@
+= image_tag @recipe.image.url(:thumb, class: "recipe_image")
+%h1= @recipe.title
+%p= @recipe.description
+
+= link_to "Back", root_path, class: "btn btn-default"
+= link_to "Edit", edit_recipe_path, class: "btn btn-default"
+= link_to "Delete", recipe_path, method: :delete, data: { confirm: "Why would you delete the knowledge of Sustenance?"}, class: "btn btn-default"
